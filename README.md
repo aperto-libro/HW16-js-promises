@@ -14,13 +14,13 @@
 
 5. Необходимо организовать цепочку промисов.
 
-   - :black_square_button: ​​Загрузить данные пользователя используем функцию getUserInfo.
+   :black_square_button: ​​Загрузить данные пользователя используем функцию getUserInfo.
 
-   - :black_square_button: Затем получить ссылку на аватар пользователя, для этого нужно использовать функцию getUserAvatar. Данная функция расширит и вернет объект пользователя.
+   :black_square_button: Затем получить ссылку на аватар пользователя, для этого нужно использовать функцию getUserAvatar. Данная функция расширит и вернет объект пользователя.
 
-   - :black_square_button: Затем получить дополнительную информацию по пользователю, для этого нужно использовать функцию getUserAdditionalInfo. Данная функция расширит и вернет объект пользователя.
+   :black_square_button: Затем получить дополнительную информацию по пользователю, для этого нужно использовать функцию getUserAdditionalInfo. Данная функция расширит и вернет объект пользователя.
 
-   - :black_square_button: В конце вывести в консоль финальную версию полученного объекта.
+   :black_square_button: В конце вывести в консоль финальную версию полученного объекта.
 
    Функции getUserInfo, getUserAvatar, getUserAdditionalInfo возвращают промисы.
 
@@ -30,12 +30,12 @@
 
 6. Необходимо добавить обработку ошибок в следующий код. Ошибка должна быть выведена в консоль.
 
-   ````new Promise(function(resolve, reject) {
+   ```new Promise(function(resolve, reject) {
    setTimeout(() => resolve({ name: 'Vic', age: 21, id: 1 } ), 1000);
    })
    .then(function(userInfo) {
    return new Promise(function(resolve, reject) {
    setTimeout(() => reject(new Error('wrong data') ), 1000);
    });
-   })```
-   ````
+   })
+   ```
