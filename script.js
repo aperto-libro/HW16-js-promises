@@ -1,4 +1,4 @@
-console.log('------------- # 4');
+// ------------- # 4
 
 function delay(ms) {
   return new Promise((resolve, reject) => {
@@ -10,7 +10,7 @@ function delay(ms) {
 
 delay(1000).then(() => console.log('Hello'));
 
-console.log('------------- # 5');
+// ------------- # 5
 
 function getUserInfo() {
   return new Promise(function (resolve, reject) {
@@ -38,7 +38,7 @@ getUserInfo()
   .then((res) => getUserAdditionalInfo(res))
   .then((res) => console.log(res));
 
-console.log('------------- # 6');
+// ------------- # 6
 
 new Promise(function (resolve, reject) {
   setTimeout(() => resolve({ name: 'Vic', age: 21, id: 1 }), 1000);
